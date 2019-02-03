@@ -35,11 +35,11 @@ class PostList extends Component {
     }
 }
 
-const maStateToProps = (state) => {
+const mapStateToProps = (state) => {
     return { posts: state.posts }
 }
 
 export default connect(
-        maStateToProps, 
+        mapStateToProps, 
         { fetchPostsAndUsers }
         )(PostList);
